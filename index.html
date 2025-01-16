@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Informatiques Pays Basque</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="navbar">
+      <div class="logo-container">
+        <img
+          src="assets/imghaut1.jpg"
+          alt="Nav1"
+          style="width: 200px; height: auto"
+        />
+        <img
+          src="assets/logo.png"
+          alt="Logo SIPB"
+          style="width: 200px; height: auto"
+        />
+        <img
+          src="assets/imghaut2.jpg"
+          alt="Nav2"
+          style="width: 200px; height: auto"
+        />
+      </div>
+      <div class="containernav">
+        <nav>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="container">
+        <h1>Administrateur Systèmes et Réseaux</h1>
+        <p>
+          Découvrez mes services de gestion et d'optimisation des systèmes et
+          réseaux.
+        </p>
+        <a href="#contact" class="btn">Contactez-moi</a>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <h2>Nos Services</h2>
+        <div class="service-item">
+          <img src="assets/logo.png" alt="Service 1" />
+          <h3>Gestion des Systèmes</h3>
+          <p>
+            Dépannage, maintenance et optimisation des systèmes informatiques.
+          </p>
+        </div>
+        <div class="service-item">
+          <img src="assets/logo.png" alt="Service 1" />
+          <h3>Infogérance</h3>
+          <p>
+            Gestion complète de votre infrastructure informatique.
+          </p>
+        </div>
+        <div class="service-item">
+          <img src="assets/logo.png" alt="Service 1" />
+          <h3>Dépannage</h3>
+          <p>
+            Intervention rapide sur site ou à distance
+          </p>
+        </div>
+        <div class="service-item">
+          <img src="assets/services2.jpg" alt="Service 2" />
+          <h3>Réseaux et Sécurité</h3>
+          <p>
+            Configuration, mise en place et maintenance de réseaux sécurisés.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2>À Propos</h2>
+        <p>
+          Bonjour! Je suis un administrateur système expérimenté avec des années
+          d'expérience dans le domaine de la gestion et de la sécurité des
+          réseaux. Mon objectif est de vous aider à optimiser vos systèmes et
+          réseaux pour une meilleure performance et sécurité.
+        </p>
+      </div>
+    </section>
+    <section id="tarifs">
+      <h2>Tarifs</h2>
+      <table>
+          <tr>
+              <th>Service</th>
+              <th>Prix</th>
+          </tr>
+          <tr>
+              <td>Infogérance</td>
+              <td>Sur devis</td>
+          </tr>
+          <tr>
+              <td>Dépannage</td>
+              <td>À partir de 50€/h</td>
+          </tr>
+      </table>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contactez-Moi</h2>
+        <form action="#" method="post" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <p>&copy; 2024 SIPB. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>
