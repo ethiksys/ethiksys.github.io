@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ComicFont';
+    src: url('fonts/ComicBook.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdventFont';
+    src: url('fonts/Adventure.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (min-width: 1200px) {
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    #hero h1 {
+        font-size: 2.5rem; /* Taille réduite mais plus grande qu'avant */
+    }
+    
+    nav ul li a {
+        font-size: 1.75rem; /* Taille mobile augmentée */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.1em; /* Légère réduction pour mobile très petit */
+    }
+    #hero h1 {
+      font-size: 2rem;
+    }
+    
+    nav ul li a {
+      font-size: 1.4rem;
+    }
+  }
+  
+  footer {
+    margin-top: auto;
+    padding: 2rem 0;
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Supprime le défilement horizontal */
+    background-color: #08411A; /* Fond vert du body */
+}
+
+body {
+    font-family: 'AdventFont', sans-serif;
+    font-size: 1.2em; /* Augmentation de 20% */
+}
+
+.center-content {
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.center-content h2,
+.center-content p {
+    color: #800310; /* Changez la couleur selon votre préférence */
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around; /* Distribue l'espace de manière équilibrée entre les éléments */
+}
+
+.logo-container img {
+    max-width: 200px; /* Assure que chaque image n'occupe pas plus d'espace qu'un maximum de 100px */
+    height: auto;
+}
+
+.containernav {
+    margin-top: 10px;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #08411A;
+    color: #800310;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    font-family: 'ComicFont', 'Courier New', monospace;
+    text-decoration: none;
+    color: #800310;
+    font-size: 1.5em; /* Taille pour les boutons nav */
+}
+
+#hero {
+    background-image: url('assets/Anglet_chambre_d_amour.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #800310;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.2rem; /* Taille augmentée pour les sous-titres */
+}
+
+#services, #tarifs, #contact {
+    padding: 3rem 0;
+}
+
+.service-item {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Ajustement du padding et de la marge pour les points */
+ul li {
+    margin-bottom: 1rem; /* Ajout de marge inférieure entre les éléments de liste */
+    list-style-position: inside; /* Place les points à l'intérieur du contenu */
+    font-family: 'ComicFont', 'Courier New', monospace;
+}
+
+.service-item img {
+    width: 100%;
+    margin-right: auto;
+}
+
+.service-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.background-green {
+    position: fixed; /* Positionnement fixe pour le fond */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Hauteur complète de la vue portée (viewport) */
+    background-color: #08411A; /* Fond vert */
+    z-index: -1; /* Assure que le fond est derrière les autres éléments */
+}
+
+.services {
+    background-color: #800310; /* Fond rouge */
+    color: #08411A; /* Texte vert pour l'accessibilité */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services li {
+    font-size: 1.3em; /* Taille augmentée pour les listes */
+}
+
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1.1rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: #800310;
+    color: #08411A;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #800310;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.1em;
+}
