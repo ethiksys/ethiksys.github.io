@@ -233,3 +233,52 @@ footer {
     width: 100%;
     font-size: 1.1em;
 }
+
+.tarifs-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.tarifs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background: #800310;
+    color: #08411A;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tarif-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.service-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-item li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+    .tarifs-grid {
+        grid-template-columns: 1fr;
+    }
+}
