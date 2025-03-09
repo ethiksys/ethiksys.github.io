@@ -264,7 +264,7 @@ footer {
 .tarif-price {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #fff;
+    color: #08411A;
 }
 
 .service-item ul {
@@ -282,3 +282,16 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+label {
+    font-family: 'ComicFont', sans-serif;
+    font-size: 1.2em; /* Augmentation de 20% */
+}
+
+h2, label {
+    color: #800310;
+}
+strong {
+    color: #800310;
+}
+
