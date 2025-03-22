@@ -1,3 +1,13 @@
+/* Variables */
+:root {
+    --color-green: #08411A;
+    --color-red: #800310;
+    /* Rouge plus clair pour un meilleur contraste */
+    --color-white: #ffffff;
+    --container-width: 1200px;
+}
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -18,290 +28,351 @@
     font-style: normal;
 }
 
-@media (min-width: 1200px) {
-    .service-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-    #hero h1 {
-        font-size: 2.5rem; /* Taille réduite mais plus grande qu'avant */
-    }
-
-    nav ul li a {
-        font-size: 1.75rem; /* Taille mobile augmentée */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 1.1em; /* Légère réduction pour mobile très petit */
-    }
-    #hero h1 {
-      font-size: 2rem;
-    }
-
-    nav ul li a {
-      font-size: 1.4rem;
-    }
-  }
-
-  footer {
-    margin-top: auto;
-    padding: 2rem 0;
-  }
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden; /* Supprime le défilement horizontal */
-    background-color: #08411A; /* Fond vert du body */
-}
-
 body {
-    font-family: 'AdventFont', sans-serif;
-    font-size: 1.2em; /* Augmentation de 20% */
-}
-
-.center-content {
-    display: flex;
-    justify-content: center; /* Centre le contenu horizontalement */
-    min-height: 100vh;
-    padding: 20px 0;
-}
-
-.center-content h2,
-.center-content p {
-    color: #800310; /* Changez la couleur selon votre préférence */
-    text-align: center;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: space-around; /* Distribue l'espace de manière équilibrée entre les éléments */
-}
-
-.logo-container img {
-    max-width: 200px; /* Assure que chaque image n'occupe pas plus d'espace qu'un maximum de 100px */
-    height: auto;
-}
-
-.containernav {
-    margin-top: 10px;
+    font-family: 'ComicFont', sans-serif;
+    font-size: 1.2em;
+    /* Modifie la taille du texte navbar */
 }
 
 .container {
-    width: 75%;
+    max-width: var(--container-width);
     margin: 0 auto;
+    padding: 0 20px;
 }
 
+/* Header */
 header {
-    background-color: #08411A;
-    color: #800310;
+    background-color: var(--color-green);
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    gap: 5rem;
+    list-style: none;
 }
 
-nav ul li a {
-    font-family: 'ComicFont', 'Courier New', monospace;
+nav a {
+    color: var(--color-red);
     text-decoration: none;
-    color: #800310;
-    font-size: 1.5em; /* Taille pour les boutons nav */
+    font-size: 2rem;
+    font-family: 'ComicFont', sans-serif;
+    transition: color 0.3s;
 }
 
-#hero {
-    background-image: url('assets/Anglet_chambre_d_amour.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #800310;
-    text-align: center;
+nav a:hover {
+    color: var(--color-white);
 }
 
-#hero h1 {
-    font-size: 3.5rem;
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 70vh;
+    min-height: 400px;
+    max-height: 800px;
+    background: url('assets/Anglet_chambre_d_amour.jpg') center/cover;
+    margin-top: 76px;
 }
 
-h2 {
-    font-size: 2.2rem; /* Taille augmentée pour les sous-titres */
-}
-
-#services, #tarifs, #contact {
-    padding: 3rem 0;
-}
-
-.service-item {
-    margin-top: 2rem;
-    text-align: center;
-}
-
-/* Ajustement du padding et de la marge pour les points */
-ul li {
-    margin-bottom: 1rem; /* Ajout de marge inférieure entre les éléments de liste */
-    list-style-position: inside; /* Place les points à l'intérieur du contenu */
-    font-family: 'ComicFont', 'Courier New', monospace;
-}
-
-.service-item img {
-    width: 100%;
-    margin-right: auto;
-}
-
-.service-grid {
-    display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-}
-/* .service-background {
-    background-color: #800310; /* Couleur de fond rouge */
-    color: #08411A; /* Couleur du texte pour un bon contraste */
-} */
-.background-green {
-    position: fixed; /* Positionnement fixe pour le fond */
+.hero-content {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh; /* Hauteur complète de la vue portée (viewport) */
-    background-color: #08411A; /* Fond vert */
-    z-index: -1; /* Assure que le fond est derrière les autres éléments */
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(8, 65, 26, 0.3); */
 }
 
-.services {
-    background-color: #800310; /* Fond rouge */
-    color: #08411A; /* Texte vert pour l'accessibilité */
+.hero-text {
+    text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
 }
 
-.services li {
-    font-size: 1.3em; /* Taille augmentée pour les listes */
+.hero-text h1 {
+    font-family: 'AdventFont', sans-serif;
+    color: var(--color-green);
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 12rem;
 }
 
+.hero-text h2 {
+    font-family: 'AdventFont', sans-serif;
+    color: var(--color-red);
+    font-size: clamp(2rem, 6vw, 4rem);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Services Section */
+.services {
+    padding: 2rem 0;
+    background-color: var(--color-red);
+}
+
+.services h2 {
+    text-align: center;
+    font-family: 'AdventFont', sans-serif;
+    color: var(--color-green);
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-family: 'AdventFont', sans-serif;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--color-red);
+}
+
+.service-card ul {
+    font-family: 'ComicFont', sans-serif;
+    font-size: 2rem;
+    list-style: none;
+}
+
+.service-card li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+/* Tarifs Section */
+.tarifs {
+    padding: 2rem 0;
+    background-color: var(--color-white);
+}
+
+.tarifs h2 {
+    text-align: center;
+    color: var(--color-red);
+    font-family: 'AdventFont', sans-serif;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.tarifs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tarif-card {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tarif-card h3 {
+    color: var(--color-green);
+    font-family: 'AdventFont', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.tarif-card h4 {
+    color: var(--color-white);
+    font-family: 'ComicFont', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    background-color: var(--color-green);
+}
+
+.contact h2 {
+    text-align: center;
+    font-family: 'AdventFont', sans-serif;
+    color: var(--color-white);
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    font-family: 'ComicFont', sans-serif;
+    color: var(--color-red);
+    font-size: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
 .form-group {
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 1.1rem;
+    color: var(--color-red);
+    font-family: 'ComicFont', sans-serif;
+    font-size: 1rem;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 1.1rem;
-    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
-.btn {
-    background-color: #800310;
-    color: #08411A;
-    padding: 0.75rem 1.5rem;
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-green);
+    box-shadow: 0 0 0 2px rgba(8, 65, 26, 0.1);
+}
+
+button {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 1rem 2rem;
     border: none;
     border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'ComicFont', sans-serif;
     cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
+    transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #555;
+button:hover {
+    background-color: var(--color-red);
 }
 
+/* Footer */
 footer {
-    background-color: #800310;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 1.1em;
-}
-
-.tarifs-section {
-    padding: 3rem 0;
+    background-color: var(--color-red);
+    font-family: 'AdventFont', sans-serif;
+    color: var(--color-green);
+    padding: 0.5rem 0;
     text-align: center;
 }
-.tarif-background {
-    background-color: #08411A; /* Couleur de fond rouge */
-    color: white; /* Couleur du texte pour un bon contraste */
-}
-.tarifs-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.service-item {
-    background: #800310;
-    color: #08411A;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-.service-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+        min-height: 300px;
+    }
 
-.tarif-price {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #08411A;
-}
+    .hero-text {
+        max-width: 95%;
+    }
 
-.service-item ul {
-    list-style: none;
-    padding: 0;
-}
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-green);
+        padding: 1rem;
+        display: none;
+    }
 
-.service-item li {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-}
+    nav.active ul {
+        display: flex;
+    }
 
-@media (max-width: 900px) {
-    .tarifs-grid {
-        grid-template-columns: 1fr;
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-content {
+        gap: 2rem;
     }
 }
 
-label {
-    font-family: 'ComicFont', sans-serif;
-    font-size: 1.2em; /* Augmentation de 20% */
-}
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
 
-h2, label {
-    color: #800310;
-}
-strong {
-    color: #800310;
-}
+    .services-grid,
+    .tarifs-grid {
+        grid-template-columns: 1fr;
+    }
 
-.contact-background {
-    background-color: #08411A; /* Couleur de fond rouge */
-    color: white; /* Couleur du texte pour un bon contraste */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
 }
