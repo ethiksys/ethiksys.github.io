@@ -33,7 +33,7 @@
     #hero h1 {
         font-size: 2.5rem; /* Taille réduite mais plus grande qu'avant */
     }
-    
+
     nav ul li a {
         font-size: 1.75rem; /* Taille mobile augmentée */
     }
@@ -46,12 +46,12 @@
     #hero h1 {
       font-size: 2rem;
     }
-    
+
     nav ul li a {
       font-size: 1.4rem;
     }
   }
-  
+
   footer {
     margin-top: auto;
     padding: 2rem 0;
@@ -168,7 +168,10 @@ ul li {
     gap: 40px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
-
+/* .service-background {
+    background-color: #800310; /* Couleur de fond rouge */
+    color: #08411A; /* Couleur du texte pour un bon contraste */
+} */
 .background-green {
     position: fixed; /* Positionnement fixe pour le fond */
     top: 0;
@@ -200,7 +203,7 @@ ul li {
     margin-bottom: 1.1rem;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
     width: 100%;
     padding: 1.1rem;
@@ -238,7 +241,10 @@ footer {
     padding: 3rem 0;
     text-align: center;
 }
-
+.tarif-background {
+    background-color: #08411A; /* Couleur de fond rouge */
+    color: white; /* Couleur du texte pour un bon contraste */
+}
 .tarifs-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -295,3 +301,7 @@ strong {
     color: #800310;
 }
 
+.contact-background {
+    background-color: #08411A; /* Couleur de fond rouge */
+    color: white; /* Couleur du texte pour un bon contraste */
+}
