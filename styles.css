@@ -156,13 +156,15 @@ nav a {
     position: relative;
     padding: 0;
     margin: 0;
-    line-height: 0; /* Supprime l'espace blanc causé par l'espace de ligne */
+    line-height: 0;
+    /* Supprime l'espace blanc causé par l'espace de ligne */
 }
 
 .hero-img {
     width: 100%;
     height: auto;
-    display: block; /* Important pour éliminer l'espace */
+    display: block;
+    /* Important pour éliminer l'espace */
     margin: 0;
 }
 
