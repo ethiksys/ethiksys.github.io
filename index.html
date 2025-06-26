@@ -1,152 +1,467 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Services informatiques éco-responsables au Pays Basque: infogérance Green IT, auto-hébergement, souveraineté des données. Solutions libres et open source à Bayonne, Anglet, Biarritz."
+    />
+    <meta
+      name="keywords"
+      content="Green IT, services informatiques écologiques, Pays Basque, infogérance durable, auto-hébergement, souveraineté données, logiciel libre, open source, Bayonne, Anglet, Biarritz, maintenance informatique éco-responsable"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="SIPB" />
+    <meta name="geo.region" content="FR-64" />
+    <meta name="geo.placename" content="Anglet, Nouvelle-Aquitaine" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Services informatiques professionnels au Pays Basque: infogérance, support à distance, intervention à domicile pour entreprises et particuliers à Bayonne, Anglet, Biarritz.">
-  <meta name="keywords"
-    content="services informatiques, Pays Basque, infogérance, dépannage informatique, support à distance, BAB, Bayonne, Anglet, Biarritz, maintenance informatique, assistance informatique">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="SIPB">
-  <title>Services Informatiques Pays Basque | Dépannage et Infogérance BAB</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  <link rel="canonical" href="https://sipb64.github.io">
-</head>
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="SIPB - Services Informatiques Éco-responsables Pays Basque"
+    />
+    <meta
+      property="og:description"
+      content="Solutions Green IT, auto-hébergement et logiciel libre au Pays Basque"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sipb64.github.io" />
+    <meta
+      property="og:image"
+      content="https://sipb64.github.io/assets/ChambreDAmour.png"
+    />
 
-<body>
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <img src="assets/logo.png" alt="Logo SIPB" class="logo-img">
+    <title>
+      SIPB | Services Informatiques Éco-responsables Pays Basque | Green IT &
+      Open Source
+    </title>
+
+    <!-- Preload critical resources -->
+    <link
+      rel="preload"
+      href="fonts/Adventure.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/ComicBook.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link rel="preload" href="assets/Anglet_chambre_d_amour.webp" as="image" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="canonical" href="https://sipb64.github.io" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "SIPB - Services Informatiques Pays Basque",
+        "description": "Services informatiques éco-responsables: Green IT, auto-hébergement, souveraineté des données",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Anglet",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "postalCode": "64600",
+          "addressCountry": "FR"
+        },
+        "telephone": "0607817460",
+        "email": "sipb64@gmail.com",
+        "url": "https://sipb64.github.io",
+        "sameAs": [
+          "https://www.linkedin.com/in/sipb64",
+          "https://github.com/sipb64"
+        ],
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 43.4832,
+            "longitude": -1.5158
+          },
+          "geoRadius": "30000"
+        },
+        "priceRange": "€€",
+        "openingHours": "Mo-Fr 09:00-18:00"
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="assets/logo.png"
+                alt="SIPB - Services Informatiques Pays Basque"
+                class="logo-img"
+            /></a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#engagements">Engagements</a></li>
+              <li><a href="#tarifs">Tarifs</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="cta-header">
+            <a href="tel:0607817460" class="btn-cta">Devis gratuit</a>
+          </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#tarifs">Tarifs</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="hero">
-    <img src="assets/ChambreDAmour.png" alt="Vue de la Chambre d'Amour à Anglet, Pays Basque" class="hero-img">
-  </section>
+    <section class="hero">
+      <!-- <picture>
+      <source srcset="assets/Anglet_chambre_d_amour.webp" type="image/webp" />
+      <img src="assets/Anglet_chambre_d_amour.webp"
+        alt="Vue panoramique de la Chambre d'Amour à Anglet, Pays Basque - Zone d'intervention SIPB" class="hero-img"
+        loading="eager" />
+    </picture> -->
 
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Nos Services</h2>
-      <div class="grid">
-        <div class="service-card">
-          <h3>Infogérance IT</h3>
-          <p>Administration</p>
-          <p>Green IT</p>
-          <p>Sécurité</p>
-          <p>Supervision</p>
-          <p>Audit</p>
-          <p>Virtualisation</p>
-          <p>Souveraineté des données</p>
-        </div>
-        <div class="service-card">
-          <h3>Support à distance</h3>
-          <p>Assistance</p>
-          <p>Conseil</p>
-          <p>Accompagnement</p>
-          <p>Optimisation</p>
-          <p>Mise à jour</p>
-          <p>Formation</p>
-          <p>Linux et Windows</p>
-        </div>
-        <div class="service-card">
-          <h3>Intervention sur site</h3>
-          <p>Configuration</p>
-          <p>Dépannage</p>
-          <p>Maintenance</p>
-          <p>Digitalisation</p>
-          <p>Sauvegarde</p>
-          <p>Auto-hébergement</p>
-          <p>Libre et Open source</p>
+      <div class="hero-content">
+        <div class="container">
+          <h1>
+            Services Informatiques<br />
+            <span class="highlight">Pays Basque</span>
+          </h1>
+          <p class="hero-subtitle">Assistance • Infogérance</p>
+          <p class="hero-subtitle">Green IT • Auto-hébergement</p>
+          <p class="hero-subtitle">Souveraineté numérique</p>
+          <div class="hero-trust">
+            <span class="trust-badge">🌱 Approche éco-responsable</span>
+            <span class="trust-badge">🔒 Protection des données</span>
+            <span class="trust-badge">💚 Logiciel libre</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="tarifs" class="tarifs">
-    <div class="container">
-      <h2>Nos Tarifs</h2>
-      <div class="grid">
-        <div class="tarif-card">
-          <h3>Infogérance</h3>
-          <p>Sur devis</p>
-          <p>TJM 450€</p>
-        </div>
-        <div class="tarif-card">
-          <h3>Intervention</h3>
-          <p>1ère heure 50€</p>
-          <p>Après 10€ / 15 minutes</p>
-        </div>
-        <div class="tarif-card">
-          <h3>Déplacement</h3>
-          <p>Gratuit sur BAB</p>
-          <p>Au delà 5 à 10€</p>
+    <section id="engagements" class="engagements">
+      <div class="container">
+        <h2>Nos Engagements</h2>
+        <div class="grid">
+          <div class="engagement-card">
+            <div class="engagement-icon">🌱</div>
+            <h3>Green IT</h3>
+            <p>
+              Solutions informatiques durables et économes en énergie pour
+              réduire votre empreinte carbone.
+            </p>
+          </div>
+          <div class="engagement-card">
+            <div class="engagement-icon">🔒</div>
+            <h3>Souveraineté des données</h3>
+            <p>
+              Reprenez le contrôle de vos services numériques et données avec
+              des solutions d'hébergement autonome.
+            </p>
+            <!-- <p>Vos données restent en France, sous votre contrôle, loin des géants du numérique.</p> -->
+          </div>
+          <div class="engagement-card">
+            <div class="engagement-icon">💚</div>
+            <h3>Libre & Open Source</h3>
+            <p>
+              Priorité aux logiciels libres pour plus de transparence, sécurité
+              et indépendance.
+            </p>
+          </div>
+          <!-- <div class="engagement-card">
+          <div class="engagement-icon">🏠</div>
+          <h3>Auto-hébergement</h3>
+          <p>Reprenez le contrôle de vos services numériques avec des solutions d'hébergement autonome.</p>
+        </div> -->
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Où sommes nous ?</h2>
-      <div class="grid">
-        <div class="contact-card">
-          <h3>Nous contacter</h3>
-          <div class="contact-info">
-            <div class="info-item">
-              <a href="tel:0607817460">
-                <span class="icon">📞</span>
-                <p>06 07 81 74 60</p>
-              </a>
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Nos Services</h2>
+        <div class="grid">
+          <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Infogérance IT</h3>
+            <ul>
+              <li>Administration système</li>
+              <li>Optimisation Green IT</li>
+              <li>Sécurité renforcée</li>
+              <li>Supervision proactive</li>
+              <li>Audit énergétique</li>
+              <li>Virtualisation optimisée</li>
+              <li>Hébergement souverain</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Support à distance</h3>
+            <ul>
+              <li>Assistance technique</li>
+              <li>Conseil en solutions libres</li>
+              <li>Accompagnement migration</li>
+              <li>Optimisation performances</li>
+              <li>Mise à jour sécurisée</li>
+              <li>Formation utilisateurs</li>
+              <li>Support Linux et Windows</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>Intervention sur site</h3>
+            <ul>
+              <li>Configuration matérielle</li>
+              <li>Dépannage d'urgence</li>
+              <li>Maintenance préventive</li>
+              <li>Digitalisation durable</li>
+              <li>Solutions de sauvegarde</li>
+              <li>Auto-hébergement</li>
+              <li>Installation logiciels libres</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tarifs" class="tarifs">
+      <div class="container">
+        <h2>Nos Tarifs</h2>
+        <!-- <p class="tarifs-intro">Tarifs transparents, sans frais cachés</p> -->
+        <div class="grid">
+          <div class="tarif-card">
+            <div class="tarif-icon">📊</div>
+            <h3>Infogérance</h3>
+            <div class="price">Sur devis personnalisé</div>
+            <p>TJM : 450€ HT</p>
+            <div class="tarif-details">
+              <small>Audit gratuit inclus</small>
             </div>
-            <div class="info-item">
-              <a href="mailto:sipb64@gmail.com">
-                <span class="icon">✉️</span>
-                <p>sipb64@gmail.com</p>
-              </a>
+          </div>
+          <div class="tarif-card popular">
+            <div class="popular-badge">⭐ Populaire</div>
+            <div class="tarif-icon">⚡</div>
+            <h3>Intervention</h3>
+            <div class="price">50€</div>
+            <p>1ère heure</p>
+            <p>Puis 10€ / 15 minutes</p>
+            <div class="tarif-details">
+              <small>Diagnostic inclus</small>
+            </div>
+          </div>
+          <div class="tarif-card">
+            <div class="tarif-icon">🚗</div>
+            <h3>Déplacement</h3>
+            <div class="price">Gratuit</div>
+            <p>Sur Bayonne-Anglet-Biarritz</p>
+            <p>Autres zones : 5 à 10€</p>
+            <div class="tarif-details">
+              <!-- <small>Véhicule éco-responsable</small> -->
+            </div>
+          </div>
+        </div>
+        <!-- <div class="guarantee">
+          <p>
+            💯 <strong>Satisfaction garantie</strong> - Intervention sous 24h en
+            cas d'urgence
+          </p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Où nous trouver ?</h2>
+        <div class="grid">
+          <div class="contact-card">
+            <h3>Nous contacter</h3>
+            <div class="contact-info">
+              <div class="info-item">
+                <a
+                  href="tel:0607817460"
+                  aria-label="Appeler SIPB au 06 07 81 74 60"
+                >
+                  <span class="icon" role="img" aria-label="Téléphone">📞</span>
+                  <div>
+                    <p><strong>06 07 81 74 60</strong></p>
+                    <!-- <small>Lun-Ven 9h-18h</small> -->
+                  </div>
+                </a>
+              </div>
+              <div class="info-item">
+                <a
+                  href="mailto:sipb64@gmail.com?subject=Demande de devis&body=Bonjour, je souhaite obtenir un devis pour..."
+                  aria-label="Envoyer un email à SIPB"
+                >
+                  <span class="icon" role="img" aria-label="Email">✉️</span>
+                  <div>
+                    <p><strong>sipb64@gmail.com</strong></p>
+                    <!-- <small>Réponse sous 2h en moyenne</small> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <!-- <h3>Nous suivre</h3> -->
+            <h3>Réseaux Professionnel</h3>            
+            <div class="contact-info">
+              <div class="info-item">
+                <a
+                  href="https://www.linkedin.com/in/sipb64"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Suivre SIPB sur LinkedIn"
+                >
+                  <span class="icon" role="img" aria-label="LinkedIn">🔗</span>
+                  <div>
+                    <p><strong>LinkedIn</strong></p>
+                    <!-- <small>Actualités tech & Green IT</small> -->
+                  </div>
+                </a>
+              </div>
+              <div class="info-item">
+                <a
+                  href="https://github.com/sipb64"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Voir les projets SIPB sur GitHub"
+                >
+                  <span class="icon" role="img" aria-label="GitHub">🔗</span>
+                  <div>
+                    <p><strong>GitHub</strong></p>
+                    <!-- <small>Projets open source</small> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="contact-card zone-card">
+          <h3>Zone d'intervention</h3>
+          <div class="zone-info">
+            <div class="zone-primary">
+              <h4>Gratuit 🎯</h4>
+              <p>Bayonne • Anglet • Biarritz</p>
+            </div>
+            <div class="zone-extended">
+              <h4>Étendue (+5-10€)</h4>
+              <p>Hendaye • Saint-Jean-de-Luz • Hasparren</p>
+            </div>
+          </div>
+        </div> -->
+
+          <div class="contact-card">
+            <h3>Participations</h3>
+            <div class="contact-info">
+              <div class="info-item">
+                <a
+                  href="https://endof10.org/fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Initiative fin de vie de Windows 10"
+                >
+                  <span class="icon" role="img" aria-label="LinkedIn">🔗</span>
+                  <div>
+                    <p><strong>Fin de Windows 10</strong></p>
+                    <small>Initiative KDE</small>
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="info-item">
+                <a
+                  href="https://github.com/sipb64"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Voir les projets SIPB sur GitHub"
+                >
+                  <span class="icon" role="img" aria-label="GitHub">🔗</span>
+                  <div>
+                    <p><strong>GitHub</strong></p>
+                    <small>Projets open source</small>
+                  </div> -->
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="contact-card">
-          <h3>Nous retrouver</h3>
-          <div class="contact-info">
-            <div class="info-item">
-              <a href="https://www.linkedin.com/in/sipb64" target="_blank" rel="noopener">
-                <span class="icon">🔗</span>
-                <p>LinkedIn</p>
-              </a>
-            </div>
-            <div class="info-item">
-              <a href="https://github.com/sipb64" target="_blank" rel="noopener">
-                <span class="icon">🔗</span>
-                <p>Github</p>
-              </a>
-            </div>
+        <!-- <div class="certifications">
+          <h3>Certifications & Expertise</h3>
+          <div class="cert-badges">
+            <span class="cert-badge">🐧 Linux Expert</span>
+            <span class="cert-badge">🔒 Sécurité IT</span>
+            <span class="cert-badge">☁️ Cloud Souverain</span>
+            <span class="cert-badge">♻️ Green IT</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-main">
+            <h6>&copy; 2025 SIPB. Tous droits réservés.</h6>
+            <p>Services informatiques éco-responsables au Pays Basque</p>
+          </div>
+          <div class="footer-links">
+            <a
+              href="./mentions-legales.html#legal"
+              aria-label="Mentions légales"
+              >Mentions légales</a
+            >
+            <a
+              href="./mentions-legales.html#privacy"
+              aria-label="Politique de confidentialité"
+              >Confidentialité</a
+            >
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <footer>
-    <div class="container">
-      <h6>&copy; 2025 SIPB. Tous droits réservés.</h6>
-    </div>
-  </footer>
-</body>
-
+    <!-- Schema.org structured data for services -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Services Green IT",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "SIPB"
+        },
+        "areaServed": "Pays Basque, France",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services informatiques éco-responsables",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Infogérance Green IT"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Auto-hébergement"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+  </body>
 </html>
