@@ -1,467 +1,330 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Services informatiques éco-responsables au Pays Basque: infogérance Green IT, auto-hébergement, souveraineté des données. Solutions libres et open source à Bayonne, Anglet, Biarritz."
-    />
-    <meta
-      name="keywords"
-      content="Green IT, services informatiques écologiques, Pays Basque, infogérance durable, auto-hébergement, souveraineté données, logiciel libre, open source, Bayonne, Anglet, Biarritz, maintenance informatique éco-responsable"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="SIPB" />
-    <meta name="geo.region" content="FR-64" />
-    <meta name="geo.placename" content="Anglet, Nouvelle-Aquitaine" />
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="SIPB - Services Informatiques Éco-responsables Pays Basque"
-    />
-    <meta
-      property="og:description"
-      content="Solutions Green IT, auto-hébergement et logiciel libre au Pays Basque"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sipb64.github.io" />
-    <meta
-      property="og:image"
-      content="https://sipb64.github.io/assets/ChambreDAmour.png"
-    />
+  <!-- SEO principal -->
+  <title>EthikSys — Infogérance Linux & Solutions Open Source (100% à distance)</title>
+  <meta name="description" content="Infogérance Linux & solutions Open Source : sécurité, sauvegardes testées, supervision, Docker. Intervention 100% à distance. Devis sous 24h ouvrées." />
+  <meta name="author" content="EthikSys" />
+  <link rel="canonical" href="https://ethiksys.fr" />
 
-    <title>
-      SIPB | Services Informatiques Éco-responsables Pays Basque | Green IT &
-      Open Source
-    </title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="EthikSys — Infogérance Linux & Open Source" />
+  <meta property="og:description" content="Administration Linux, sécurité, sauvegardes, supervision, Docker. Intervention 100% à distance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ethiksys.fr" />
+  <meta property="og:image" content="assets/og-image.jpg" />
 
-    <!-- Preload critical resources -->
-    <link
-      rel="preload"
-      href="fonts/Adventure.otf"
-      as="font"
-      type="font/otf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/ComicBook.otf"
-      as="font"
-      type="font/otf"
-      crossorigin
-    />
-    <link rel="preload" href="assets/Anglet_chambre_d_amour.webp" as="image" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link rel="canonical" href="https://sipb64.github.io" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "SIPB - Services Informatiques Pays Basque",
-        "description": "Services informatiques éco-responsables: Green IT, auto-hébergement, souveraineté des données",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Anglet",
-          "addressRegion": "Nouvelle-Aquitaine",
-          "postalCode": "64600",
-          "addressCountry": "FR"
-        },
-        "telephone": "0607817460",
-        "email": "sipb64@gmail.com",
-        "url": "https://sipb64.github.io",
-        "sameAs": [
-          "https://www.linkedin.com/in/sipb64",
-          "https://github.com/sipb64"
-        ],
-        "serviceArea": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": 43.4832,
-            "longitude": -1.5158
-          },
-          "geoRadius": "30000"
-        },
-        "priceRange": "€€",
-        "openingHours": "Mo-Fr 09:00-18:00"
-      }
-    </script>
-  </head>
+  <!-- Schema.org (simple et cohérent) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"EthikSys",
+    "url":"https://ethiksys.fr",
+    "areaServed":"FR",
+    "email":"contact@ethiksys.fr",
+    "serviceType":[
+      "Infogérance Linux",
+      "Sécurisation systèmes",
+      "Sauvegardes & PRA",
+      "Déploiement Docker / services Open Source",
+      "Proxmox (cluster, virtualisation)"
+    ]
+  }
+  </script>
+</head>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-content">
-          <div class="logo">
-            <a href="index.html"
-              ><img
-                src="assets/logo.png"
-                alt="SIPB - Services Informatiques Pays Basque"
-                class="logo-img"
-            /></a>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#tarifs">Tarifs</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#engagements">Engagements</a></li>
-            </ul>
-          </nav>
-          <div class="cta-header">
-            <a href="tel:0607817460" class="btn-cta">Devis gratuit</a>
-          </div>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo" aria-label="Retour à l'accueil">Ethik<span>Sys</span></a>
+
+    <!-- Menu Mobile (checkbox hack, zéro JS) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu" />
+    <label for="menu-toggle" class="menu-burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#services">Expertise</a></li>
+        <li><a href="#offres">Offres</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact" class="btn-nav">Devis</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <span class="hero-tag">Administration Systèmes • Linux • Open Source</span>
+
+      <h1>Infogérance IT, assitance, support</h1>
+
+      <!-- <p class="hero-subtitle">
+        Mise à jour, durcissement, sauvegardes testées, supervision/alerting et déploiements Open Source (Docker, services auto-héberger).
+        Intervention experte 100% à distance.
+      </p> -->
+
+      <div class="trust-badges" aria-label="Engagements">
+        <div class="badge">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"></path>
+          </svg>
+          Open Source
         </div>
-      </div>
-    </header>
-
-    <section class="hero">
-      <!-- <picture>
-      <source srcset="assets/Anglet_chambre_d_amour.webp" type="image/webp" />
-      <img src="assets/Anglet_chambre_d_amour.webp"
-        alt="Vue panoramique de la Chambre d'Amour à Anglet, Pays Basque - Zone d'intervention SIPB" class="hero-img"
-        loading="eager" />
-    </picture> -->
-
-      <div class="hero-content">
-        <div class="container">
-          <h1>
-            Services Informatiques<br />
-            <span class="highlight">Pays Basque</span>
-          </h1>
-          <p class="hero-subtitle">Assistance • Infogérance</p>
-          <p class="hero-subtitle">Auto-hébergement • Green IT</p>
-          <p class="hero-subtitle">Souveraineté numérique</p>
-          <div class="hero-trust">
-            <span class="trust-badge">🔒 Protection des données</span>
-            <span class="trust-badge">💚 Logiciel libre</span>
-            <span class="trust-badge">🌱 Approche éco-responsable</span>
-          </div>
+        <div class="badge">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
+          </svg>
+          Sécurité
         </div>
-      </div>
-    </section>
-
-    <section id="engagements" class="engagements">
-      <div class="container">
-        <h2>Nos Engagements</h2>
-        <div class="grid">
-          <div class="engagement-card">
-            <div class="engagement-icon">🔒</div>
-            <h3>Souveraineté des données</h3>
-            <p>
-              Reprenez le contrôle de vos services numériques et données avec
-              des solutions d'hébergement autonome.
-            </p>
-            <!-- <p>Vos données restent en France, sous votre contrôle, loin des géants du numérique.</p> -->
-          </div>
-          <div class="engagement-card">
-            <div class="engagement-icon">💚</div>
-            <h3>Libre & Open Source</h3>
-            <p>
-              Priorité aux logiciels libres pour plus de transparence, sécurité
-              et indépendance.
-            </p>
-          </div>
-                    <div class="engagement-card">
-            <div class="engagement-icon">🌱</div>
-            <h3>Green IT</h3>
-            <p>
-              Solutions informatiques durables et économes pour
-              réduire vos factures et votre empreinte carbone.
-            </p>
-          </div>
-          <!-- <div class="engagement-card">
-          <div class="engagement-icon">🏠</div>
-          <h3>Auto-hébergement</h3>
-          <p>Reprenez le contrôle de vos services numériques avec des solutions d'hébergement autonome.</p>
-        </div> -->
+        <div class="badge">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path>
+          </svg>
+          Souveraineté
         </div>
+        <div class="badge">100% à distance</div>
       </div>
-    </section>
 
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Nos Services</h2>
-        <div class="grid">
-          <div class="service-card">
-            <div class="service-icon">🏢</div>
-            <h3>Infogérance IT</h3>
-            <ul>
-              <li>Administration système</li>
-              <li>Sécurité renforcée</li>
-              <li>Supervision proactive</li>
-              <li>Optimisation Budget</li>
-              <li>Audit d'infrastructure</li>
-              <li>Virtualisation optimisée</li>
-              <li>Hébergement souverain</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">💻</div>
-            <h3>Support à distance</h3>
-            <ul>
-              <li>Assistance technique</li>
-              <li>Conseil en solutions libres</li>
-              <li>Accompagnement migration</li>
-              <li>Optimisation performances</li>
-              <li>Mise à jour sécurisée</li>
-              <li>Formation utilisateurs</li>
-              <li>Support Linux et Windows</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🛠️</div>
-            <h3>Intervention sur site</h3>
-            <ul>
-              <li>Configuration matérielle</li>
-              <li>Dépannage d'urgence</li>
-              <li>Maintenance préventive</li>
-              <li>Digitalisation durable</li>
-              <li>Solutions de sauvegarde</li>
-              <li>Auto-hébergement</li>
-              <li>Installation logiciels libres</li>
-            </ul>
-          </div>
-        </div>
+      <div class="hero-actions">
+        <a href="#offres" class="btn btn-primary">Voir les forfaits</a>
+        <a href="#contact" class="btn btn-outline">Demander un devis</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="tarifs" class="tarifs">
-      <div class="container">
-        <h2>Nos Tarifs</h2>
-        <!-- <p class="tarifs-intro">Tarifs transparents, sans frais cachés</p> -->
-        <div class="grid">
-          <div class="tarif-card">
-            <div class="tarif-icon">📊</div>
-            <h3>Infogérance</h3>
-            <div class="price">Sur devis personnalisé</div>
-            <p>TJM : 350€ HT</p>
-            <div class="tarif-details">
-              <small>Audit gratuit inclus</small>
-            </div>
-          </div>
-          <div class="tarif-card popular">
-            <div class="popular-badge">⭐ Populaire</div>
-            <div class="tarif-icon">⚡</div>
-            <h3>Intervention</h3>
-            <div class="price">50€</div>
-            <p>1ère heure</p>
-            <p>Puis 10€ / 15 minutes</p>
-            <div class="tarif-details">
-              <small>Diagnostic inclus</small>
-            </div>
-          </div>
-          <div class="tarif-card">
-            <div class="tarif-icon">🚗</div>
-            <h3>Déplacement</h3>
-            <div class="price">Gratuit</div>
-            <p>Sur Bayonne-Anglet-Biarritz</p>
-            <p>Autres zones : 5 à 10€</p>
-            <div class="tarif-details">
-              <!-- <small>Véhicule éco-responsable</small> -->
-            </div>
-          </div>
-        </div>
-        <!-- <div class="guarantee">
-          <p>
-            💯 <strong>Satisfaction garantie</strong> - Intervention sous 24h en
-            cas d'urgence
-          </p>
-        </div> -->
+  <!-- SERVICES -->
+  <section id="services" class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Expertise systèmes & infrastructure</h2>
+        <p>Une administration rigoureuse de vos environnements Linux, avec des livrables clairs (documentation, procédures, recommandations).</p>
       </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Où nous trouver ?</h2>
-        <div class="grid">
-          <div class="contact-card">
-            <h3>Nous contacter</h3>
-            <div class="contact-info">
-              <div class="info-item">
-                <a
-                  href="tel:0607817460"
-                  aria-label="Appeler SIPB au 06 07 81 74 60"
-                >
-                  <span class="icon" role="img" aria-label="Téléphone">📞</span>
-                  <div>
-                    <p><strong>06 07 81 74 60</strong></p>
-                    <!-- <small>Lun-Ven 9h-18h</small> -->
-                  </div>
-                </a>
-              </div>
-              <div class="info-item">
-                <a
-                  href="mailto:sipb64@gmail.com?subject=Demande de devis&body=Bonjour, je souhaite obtenir un devis pour..."
-                  aria-label="Envoyer un email à SIPB"
-                >
-                  <span class="icon" role="img" aria-label="Email">✉️</span>
-                  <div>
-                    <p><strong>sipb64@gmail.com</strong></p>
-                    <!-- <small>Réponse sous 2h en moyenne</small> -->
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+      <div class="grid-3">
+        <article class="card service-card">
+          <div class="icon-box" aria-hidden="true"></div>
+          <h3>Administration Linux</h3>
+          <p>Gestion du cycle de vie : mises à jour, patchs de sécurité, supervision et optimisation.</p>
+        </article>
 
-          <div class="contact-card">
-            <!-- <h3>Nous suivre</h3> -->
-            <h3>Réseaux Professionnels</h3>            
-            <div class="contact-info">
-              <div class="info-item">
-                <a
-                  href="https://www.linkedin.com/in/sipb64"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Suivre SIPB sur LinkedIn"
-                >
-                  <span class="icon" role="img" aria-label="LinkedIn">🔗</span>
-                  <div>
-                    <p><strong>LinkedIn</strong></p>
-                    <!-- <small>Actualités tech & Green IT</small> -->
-                  </div>
-                </a>
-              </div>
-              <div class="info-item">
-                <a
-                  href="https://github.com/sipb64"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Voir les projets SIPB sur GitHub"
-                >
-                  <span class="icon" role="img" aria-label="GitHub">🔗</span>
-                  <div>
-                    <p><strong>GitHub</strong></p>
-                    <!-- <small>Projets open source</small> -->
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+        <article class="card service-card">
+          <div class="icon-box" aria-hidden="true"></div>
+          <h3>Hébergement applicatif</h3>
+          <p>Déploiement d’applications métiers en conteneurs Docker ou sur mesure : Nextcloud, outils internes, services auto-héberger.</p>
+        </article>
 
-          <!-- <div class="contact-card zone-card">
-          <h3>Zone d'intervention</h3>
-          <div class="zone-info">
-            <div class="zone-primary">
-              <h4>Gratuit 🎯</h4>
-              <p>Bayonne • Anglet • Biarritz</p>
-            </div>
-            <div class="zone-extended">
-              <h4>Étendue (+5-10€)</h4>
-              <p>Hendaye • Saint-Jean-de-Luz • Hasparren</p>
-            </div>
-          </div>
-        </div> -->
+        <article class="card service-card">
+          <div class="icon-box" aria-hidden="true"></div>
+          <h3>Sécurité, sauvegardes & PRA</h3>
+          <p>Durcissement, pare-feu, accès SSH/VPN, stratégie de sauvegarde résiliente et tests de restauration.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-          <div class="contact-card">
-            <h3>Participations</h3>
-            <div class="contact-info">
-              <div class="info-item">
-                <a
-                  href="https://endof10.org/fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Initiative fin de vie de Windows 10"
-                >
-                  <span class="icon" role="img" aria-label="LinkedIn">🔗</span>
-                  <div>
-                    <p><strong>Fin de Windows 10</strong></p>
-                    <small>Initiative KDE</small>
-                  </div>
-                </a>
-              </div>
-              <!-- <div class="info-item">
-                <a
-                  href="https://github.com/sipb64"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Voir les projets SIPB sur GitHub"
-                >
-                  <span class="icon" role="img" aria-label="GitHub">🔗</span>
-                  <div>
-                    <p><strong>GitHub</strong></p>
-                    <small>Projets open source</small>
-                  </div> -->
-                </a>
-              </div>
-            </div>
-          </div>
+  <!-- OFFRES -->
+  <section id="offres" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Offres claires & forfaits</h2>
+        <p>Le récurrent est priorisé pour garantir un suivi continu. Les projets restent possibles quand il faut “mettre à niveau”.</p>
+      </div>
+
+      <div class="grid-3 pricing-grid">
+        <!-- Récurrent Starter -->
+        <div class="card pricing-card featured">
+          <div class="featured-tag">Récurrent</div>
+          <h3>Infogérance Linux — Starter</h3>
+          <div class="price">99<span>/mois</span></div>
+          <p class="price-desc">À partir de 99€/mois — inclut 1 serveur/VM (Linux).</p>
+          <ul class="check-list">
+            <li>Mises à jour critiques + hygiène de sécurité</li>
+            <li>Supervision + alertes 24/7 (automatisées)</li>
+            <li>Sauvegardes externalisées + tests de restauration</li>
+            <li>Rapport mensuel (PDF) + recommandations</li>
+            <li>Serveurs/VM supplémentaires : sur devis</li>
+          </ul>
+          <a href="mailto:contact@ethiksys.fr?subject=Devis%20Infog%C3%A9rance%20Starter%20(99%E2%82%AC%2Fmois)%20-%20EthikSys&body=Bonjour%2C%0D%0A%0D%0AContexte%20%3A%20(nb%20serveurs%2FVM%2C%20OS%2C%20h%C3%A9bergement)%0D%0ABesoin%20%3A%20infog%C3%A9rance%20mensuelle%20Starter%0D%0AContraintes%20%3A%20(souverainet%C3%A9%2C%20sauvegardes%2C%20criticite%2C%20d%C3%A9lais)%0D%0A%0D%0AMerci" class="btn btn-primary full-width">Demander un devis</a>
         </div>
 
-        <!-- <div class="certifications">
-          <h3>Certifications & Expertise</h3>
-          <div class="cert-badges">
-            <span class="cert-badge">🐧 Linux Expert</span>
-            <span class="cert-badge">🔒 Sécurité IT</span>
-            <span class="cert-badge">☁️ Cloud Souverain</span>
-            <span class="cert-badge">♻️ Green IT</span>
-          </div>
-        </div> -->
-      </div>
-    </section>
+        <!-- Récurrent Business -->
+        <div class="card pricing-card">
+          <h3>Infogérance — Business (multi-serveurs)</h3>
+          <div class="price">299<span>+/mois</span></div>
+          <p class="price-desc">Pour petites infra (plusieurs VM/services). Périmètre adapté au besoin.</p>
+          <ul class="check-list">
+            <li>Patching planifié + fenêtres de maintenance</li>
+            <li>Supervision (métriques, logs, alertes)</li>
+            <li>Sauvegardes + procédures de restauration</li>
+            <li>Durcissement + revue régulière</li>
+            <li>Documentation + passation</li>
+          </ul>
+          <a href="mailto:contact@ethiksys.fr?subject=Devis%20Infog%C3%A9rance%20Business%20-%20EthikSys&body=Bonjour%2C%0D%0A%0D%0AContexte%20%3A%20(nb%20serveurs%2FVM%2C%20services%2C%20criticite)%0D%0ABesoin%20%3A%20infog%C3%A9rance%20Business%20(multi-serveurs)%0D%0AObjectifs%20%3A%20(disponibilit%C3%A9%2C%20sauvegardes%2C%20s%C3%A9curit%C3%A9)%0D%0A%0D%0AMerci" class="btn btn-outline full-width">Décrire mon infra</a>
+        </div>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-main">
-            <h6>&copy; 2025 SIPB. Tous droits réservés.</h6>
-            <p>Services informatiques éco-responsables au Pays Basque</p>
-          </div>
-          <div class="footer-links">
-            <a
-              href="./mentions-legales.html#legal"
-              aria-label="Mentions légales"
-              >Mentions légales</a
-            >
-            <a
-              href="./mentions-legales.html#privacy"
-              aria-label="Politique de confidentialité"
-              >Confidentialité</a
-            >
-          </div>
+        <!-- Proxmox / Projet -->
+        <div class="card pricing-card">
+          <h3>Proxmox / Cluster & Projets</h3>
+          <div class="price">Sur<span> devis</span></div>
+          <p class="price-desc">Gestion d’infra Proxmox (nœuds, stockage, VM), ou déploiement sur-mesure Open Source.</p>
+          <ul class="check-list">
+            <li>Audit des pré-requis & architecture</li>
+            <li>Installation / migration / sécurisation</li>
+            <li>Reverse proxy + TLS + durcissement</li>
+            <li>Livraison documentation technique</li>
+            <li>Option : transfert de compétences</li>
+          </ul>
+          <a href="mailto:contact@ethiksys.fr?subject=Devis%20Proxmox%20%2F%20Projet%20Open%20Source%20-%20EthikSys&body=Bonjour%2C%0D%0A%0D%0AContexte%20%3A%20(cluster%20Proxmox%20%3F%20nb%20n%C5%93uds%2C%20stockage%2C%20VM%2C%20services)%0D%0ABesoin%20%3A%20(migration%2C%20mise%20en%20place%2C%20s%C3%A9curisation%2C%20sauvegardes%2C%20PRA)%0D%0AObjectif%20%3A%20(stabilit%C3%A9%2C%20souverainet%C3%A9%2C%20co%C3%BBt)%0D%0A%0D%0AMerci" class="btn btn-outline full-width">Demander un devis</a>
         </div>
       </div>
-    </footer>
 
-    <!-- Schema.org structured data for services -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Services Green IT",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "SIPB"
-        },
-        "areaServed": "Pays Basque, France",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Services informatiques éco-responsables",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Infogérance Green IT"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Auto-hébergement"
-              }
-            }
-          ]
-        }
-      }
-    </script>
-  </body>
+      <p class="small-note" style="margin-top:16px;color:var(--color-text-light);text-align:center;">
+        Les tarifs sont indicatifs : le périmètre (nombre de VM/services, criticité, exigences PRA) conditionne le prix.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Comment ça se passe (100% à distance)</h2>
+        <p>Un process simple, asynchrone, et documenté pour avancer vite sans réunions inutiles.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>1) Brief</h3>
+          <p>Vous décrivez votre contexte (infra, contraintes, objectifs). Je réponds avec un périmètre clair.</p>
+        </article>
+
+        <article class="card">
+          <h3>2) Audit rapide</h3>
+          <p>Revue des points critiques (accès, sauvegardes, sécurité, supervision) et plan d’action priorisé.</p>
+        </article>
+
+        <article class="card">
+          <h3>3) Mise en place + doc</h3>
+          <p>Implémentation, monitoring, sauvegardes testées, puis livraison de documentation et procédures.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALEURS -->
+  <section id="valeurs" class="section-padding bg-dark text-white">
+    <div class="container text-center">
+      <h2>Pourquoi EthikSys ?</h2>
+
+      <div class="grid-4 mt-large">
+        <div class="value-item">
+          <strong>Indépendant</strong>
+          <p>Pas de revente de solutions partenaires. Conseil neutre.</p>
+        </div>
+
+        <div class="value-item">
+          <strong>Libre</strong>
+          <p>Solutions auditables, sans verrouillage propriétaire (vendor lock-in).</p>
+        </div>
+
+        <div class="value-item">
+          <strong>Distanciel</strong>
+          <p>Réactivité, process asynchrone, documentation livrée.</p>
+        </div>
+
+        <div class="value-item">
+          <strong>Suivi</strong>
+          <p>Un interlocuteur unique qui connaît votre dossier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Sur site -->
+<section id="local" class="section-padding bg-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Interventions sur site</h2>
+      <h3>(Pays Basque / Sud Landes)</h3>
+      <p>Possible si nécessaire (mise en place initiale, audit, intervention ponctuelle).</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card">
+        <h3>Pros (TPE/PME, assos)</h3>
+        <p>Audit d’infra, mise en place initiale, réseau/pare-feu, Proxmox (installation/migration), documentation et passation.</p>
+      </article>
+
+      <article class="card">
+        <h3>Particuliers</h3>
+        <p>Migration Linux, dépannage, récupération de données, sécurisation poste et bonnes pratiques sauvegardes.</p>
+      </article>
+
+      <article class="card">
+        <h3>Zone & conditions</h3>
+        <p>Zone : à préciser (ex : Morbihan / Vannes / alentours). Frais et conditions indiqués au devis.</p>
+      </article>
+    </div>
+
+    <div style="text-align:center; margin-top: 24px;">
+      <a class="btn btn-primary"
+         href="mailto:contact@ethiksys.fr?subject=Demande%20intervention%20sur%20site%20-%20EthikSys&body=Bonjour%2C%0D%0A%0D%0AVille%20%3A%0D%0AContexte%20%3A%20(pro%2Fasso%2Fparticulier)%0D%0ABesoin%20%3A%0D%0AContraintes%20%3A%20(date%2C%20urgence%2C%20budget)%0D%0A%0D%0AMerci">
+        Demander une intervention sur site
+      </a>
+    </div>
+  </div>
+</section>
+  <!-- CONTACT -->
+  <section id="contact" class="section-padding">
+    <div class="container contact-wrapper">
+      <div class="contact-text">
+        <h2>Prêt à sécuriser votre infra ?</h2>
+        <p>Décrivez votre besoin par email (même en 5 lignes). Réponse sous 24h ouvrées.</p>
+
+        <p class="contact-link">
+          <a href="mailto:contact@ethiksys.fr?subject=Demande%20de%20devis%20-%20EthikSys">contact@ethiksys.fr</a>
+        </p>
+
+        <p class="small-note">Astuce : utilisez les boutons “Devis” des offres (email pré-rempli).</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <strong>EthikSys</strong>
+      <p>Expertise systèmes Linux & solutions Open Source.</p>
+    </div>
+
+    <div class="footer-col">
+      <nav aria-label="Liens">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="sitemap.xml">Plan du site</a>
+      </nav>
+    </div>
+
+    <div class="footer-col copyright">
+      &copy; 2026 EthikSys.
+    </div>
+  </div>
+</footer>
+</body>
 </html>
